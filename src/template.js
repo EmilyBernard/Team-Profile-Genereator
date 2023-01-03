@@ -77,7 +77,7 @@ const createIntern = intern => {
     <div class="card employee-card intern-card">
         <div class="card-header text-center">
             <h2 class="card-title">${intern.getName()}</h2>
-            <h4 class="card-title">Title: ${intern.getRole()}</h4>
+            <h4 class="card-title">Title: ${intern.getTitle()}</h4>
         </div>
         <div class="card-body bg-light">
             <ul class="list-group text-dark">
@@ -93,16 +93,16 @@ const createIntern = intern => {
 const html = [];
 
     html.push(team
-        .filter(employee => employee.getRole() === 'Manager')
+        .filter(employee => employee.getTitle() === 'Manager')
         .map(manager => createManager(manager))
     );
     html.push(team
-        .filter(employee => employee.getRole() === 'Engineer')
+        .filter(employee => employee.getTitle() === 'Engineer')
         .map(engineer => createEngineer(engineer))
         .join("")
     );
     html.push(team
-        .filter(employee => employee.getRole() === 'Intern')
+        .filter(employee => employee.getTitle() === 'Intern')
         .map(intern => createIntern(intern))
         .join("")
     );
