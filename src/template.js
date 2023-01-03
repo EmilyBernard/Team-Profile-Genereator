@@ -52,6 +52,60 @@ const createManager = manager => {
         </div>
     `;
 };
+// Create Engineer Card
+const createEngineer = engineer => {
+    return `
+    <div class="card employee-card engineer-card">
+        <div class="card-header text-center">
+            <h2 class="card-title">${engineer.getName()}</h2>
+            <h4 class="card-title">Title: ${engineer.getTitle()}</h4>
+        </div>
+        <div class="card-body bg-light">
+            <ul class="list-group text-dark">
+                <li class="list-group-item">ID: ${engineer.getId()}</li>
+                <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
+                <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGitHub()}" target="_blank" rel="noopener noreferrer">${engineer.getGitHub()}</a></li>
+            </ul>
+        </div>
+    </div>
+    `;
+};
 
+// Create Intern Card
+const createIntern = intern => {
+    return `
+    <div class="card employee-card intern-card">
+        <div class="card-header text-center">
+            <h2 class="card-title">${intern.getName()}</h2>
+            <h4 class="card-title">Title: ${intern.getRole()}</h4>
+        </div>
+        <div class="card-body bg-light">
+            <ul class="list-group text-dark">
+                <li class="list-group-item">ID: ${intern.getId()}</li>
+                <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
+                <li class="list-group-item">School: ${intern.getSchool()}</li>
+            </ul>
+        </div>
+    </div>
+    `;
+};
 
+const html = [];
+
+    html.push(team
+        .filter(employee => employee.getRole() === 'Manager')
+        .map(manager => createManager(manager))
+    );
+    html.push(team
+        .filter(employee => employee.getRole() === 'Engineer')
+        .map(engineer => createEngineer(engineer))
+        .join("")
+    );
+    html.push(team
+        .filter(employee => employee.getRole() === 'Intern')
+        .map(intern => createIntern(intern))
+        .join("")
+    );
+
+    return html.join("");
 }
