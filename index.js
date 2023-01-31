@@ -60,10 +60,11 @@ function addManager() {
         {
             type: "input",
             name: "managerOfficeNumber",
-            message: "Enter the Manager's office phone number: (format: 111-111-1111)",
+            message: "Enter the Manager's office phone number:",
             validate: answer => {
                 const pass = answer.match(
-                    /^[1-9]\d*$/
+                    /^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d+)\)?)[\-\.\ \\\/]?)?((?:\(?\d{1,}\)?[\-\.\ \\\/]?)+)(?:[\-\.\ \\\/]?(?:#|ext\.?|extension|x)[\-\.\ \\\/]?(\d+))?$/i
+            //        /^[1-9]\d*$/
                 );
                 if (pass) {
                     return true;

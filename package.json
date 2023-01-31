@@ -6,9 +6,10 @@
     "scripts": {
       "test": "jest"
     },
-    "author": "",
+    "author": "Emily Bernard",
     "license": "ISC",
     "dependencies": {
-      "inquirer": "^8.2.4"
+      "inquirer": "^8.2.4",
+      "jest": "^26.1.0"
     }
   }
