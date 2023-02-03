@@ -1,7 +1,7 @@
-const Employee = require('..lib/Employee');
+const Employee = require('../lib/Employee');
 
 test('creates employee object', () => {
-    const employee = new Employee(Wanda);
+    const employee = new Employee('Wanda');
 });
 
 test('set id with constructor', () => {
