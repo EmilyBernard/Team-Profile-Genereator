@@ -20,5 +20,5 @@ test('get github account with getGitHub() method', () => {
 test('getTitle() return Engineer', () => {
     const testValue = 'Engineer';
     const e = new Engineer('Foo', 1, 'engineer@email.com', 'GitHubAccount');
-    expect(e.getTitle).toBe(testValue);
+    expect(e.getTitle()).toBe(testValue);
 });
