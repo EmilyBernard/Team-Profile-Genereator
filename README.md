@@ -8,17 +8,15 @@ Submitted for evaluation.
 <br>
 # Project Links
 
-<br>
-https://drive.google.com/file/d/1qwjI0GBrU13OASgB5Db8A-Vg8NiUJPv6/view
-<br>
-https://github.com/theLemmonade/project-headspace.ai
-<br>
-<br>
+<br>https://github.com/EmilyBernard/Team-Profile-Genereator
+<br>https://drive.google.com/file/d/1qwjI0GBrU13OASgB5Db8A-Vg8NiUJPv6/view
 
-# Screenshots of Webpage
-<img src="public/assets/headspacemainpagescreenshot.png" alt="Website Screenshot1">
-<img src="public/assets/headspaceloginscreenshot.png" alt="Website Screenshot2">
-<img src="public/assets/headspacecreatedimagescreenshot.png" alt="Website Screenshot3">
+<br>
+<br>
+# Screenshots
+<img src="public/screenShotNodeIndexScriptWorking.png" alt="Website Screenshot1">
+<img src="public/screenShotOfFileStructure.png" alt="Website Screenshot2">
+<img src="public/screenShotResultTeamProfile.png" alt="Website Screenshot3">
 <br>
 <br>
 <br>
@@ -68,7 +66,7 @@ Users can run 'node index.js' to begin creating their team profile.
 
 # Challenges
 <ul>
-<li>Running the tests produced fails for some files, which is actually a good thing because it points out issues that need to be debugged. 
+<li>Running the tests produced fails for some files, which is actually a good thing because it pointed out issues that needed to be debugged. 
 </ul>
 <br>
 <br>
